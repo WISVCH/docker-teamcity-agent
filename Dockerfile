@@ -9,3 +9,4 @@ RUN curl -so /usr/lib/jvm/oracle-jdk/jre/lib/security/US_export_policy.jar \
              https://commissies.ch.tudelft.nl/~mark/UnlimitedJCEPolicyJDK8/US_export_policy.jar && \
     curl -so /usr/lib/jvm/oracle-jdk/jre/lib/security/local_policy.jar \
              https://commissies.ch.tudelft.nl/~mark/UnlimitedJCEPolicyJDK8/local_policy.jar
+RUN echo '{ "allow_root": true }' > /root/.bowerrc
