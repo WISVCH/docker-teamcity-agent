@@ -1,5 +1,4 @@
 FROM jetbrains/teamcity-agent
-MAINTAINER Mark Janssen <mark@praseodym.net>
 
 RUN curl -so /usr/local/share/ca-certificates/wisvch.crt https://ch.tudelft.nl/certs/wisvch.crt && \
     chmod 644 /usr/local/share/ca-certificates/wisvch.crt && \
